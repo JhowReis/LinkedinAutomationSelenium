@@ -35,10 +35,12 @@ public class LinkedinTeste {
 	@Test
 	public void login(){
 		dsl.clickButton("//a[contains(text(),'Sign in')]");
-		
-		
+		dsl.fillTextFieldId("username", "jonathan.linkedin2019@gmail.com");
+		dsl.fillTextFieldId("password", "************");
+		dsl.clickButton("//button[contains(text(),'Sign in')]");
 		
 	}
 	
+
 
 }

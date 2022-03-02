@@ -17,5 +17,10 @@ public class DSL {
 		driver.findElement(By.xpath(xpath)).click();
 		
 	}
+	
+	public void fillTextFieldId(String id, String text) {
+		driver.findElement(By.id(id)).sendKeys(text);
+		
+	}
 
 }
